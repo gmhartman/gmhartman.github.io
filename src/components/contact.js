@@ -1,8 +1,27 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 
 function Contact() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = ref.current ? ref.current.getBoundingClientRect().top : 0;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight) {
+        ref.current.classList.add('fade-in');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="contact-wrapper">
+    <div ref={ref} className="contact-wrapper">
       <h2 id="contact" className="contact-header">
         Let's build something together.
       </h2>

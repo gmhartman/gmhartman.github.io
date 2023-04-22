@@ -1,10 +1,27 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 
 function Skills() {
+  const ref = useRef(null);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = ref.current ? ref.current.getBoundingClientRect().top : 0;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight) {
+        ref.current.classList.add('fade-in');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-      <div className="skills-wrapper">
+      <div ref={ref} className="skills-wrapper">
         <div>
           <h1 id="skills">Skills</h1>
         </div>

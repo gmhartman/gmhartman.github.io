@@ -21,7 +21,7 @@ function Nav() {
       <div className="navbar">
         <div className="logo">
           <a href="#home">
-            <img src={Logo} alt="logo thumbnail"></img>
+            <img className="logo" src={Logo} alt="logo thumbnail"></img>
           </a>
         </div>
         <div className="nav-links">

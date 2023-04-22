@@ -1,10 +1,28 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import photo from "../assets/predsfam.png";
 
 function About() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = ref.current ? ref.current.getBoundingClientRect().top : 0;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight) {
+        ref.current.classList.add('fade-in');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-      <div className="about-wrapper">
+      <div ref={ref} className='about-wrapper'>
         <div className="about-text">
           <h2 id="about">About Greg</h2>
           <p className="about-p">
