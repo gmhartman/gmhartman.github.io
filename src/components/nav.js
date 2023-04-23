@@ -20,29 +20,29 @@ function Nav() {
     <div id="home">
       <div className="navbar">
         <div className="logo">
-          <a href="#home">
+          <a href="#home" className="nav-a">
             <img className="logo" src={Logo} alt="logo thumbnail"></img>
           </a>
         </div>
         <div className="nav-links">
           <ol className="main-nav">
-            <li>
-              <a href="#about" to="/">
+            <li className="nav-li">
+              <a href="#about" to="/" className="nav-a">
                 About
               </a>
             </li>
-            <li>
-              <a href="#projects" to="/">
+            <li className="nav-li">
+              <a href="#projects" to="/" className="nav-a">
                 Projects
               </a>
             </li>
-            <li>
-              <a href="#skills" to="/">
+            <li className="nav-li">
+              <a href="#skills" to="/" className="nav-a">
                 Skills
               </a>
             </li>
-            <li>
-              <a href="#contact" to="/">
+            <li className="nav-li">
+              <a href="#contact" to="/" className="nav-a">
                 Contact
               </a>
             </li>

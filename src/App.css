@@ -816,13 +816,14 @@ li > a:visited {
     width: 100%;
     margin: 0 auto;
   }
-  .nav-bar {
+  .navbar {
     width: 100%;
+    position: relative;
   }
 
   .nav-links {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding-right: 0;
   }
   .site-wrapper {
     display: flex;
@@ -831,6 +832,9 @@ li > a:visited {
   .main-nav {
     padding: 0;
   }
+  .nav-a {
+    font-size: 95%;
+  }
   .logo {
     display: none;
 }
@@ -838,38 +842,46 @@ li > a:visited {
     width: 100%;
   }
   .about-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
+    width: 95%;
+    padding-bottom: 20rem;
+  }
+  .about-text { 
     width: 95%;
   }
   .about-p {
     width: 95%;
   }
   .famphoto {
-    max-width: 50%;
+    max-width: 95%;
     text-align: center;
   }
   .predsphoto {
-    max-width: 50%;
-    padding-top: 15rem;
+    max-width: 100%;
+  }
+  .projects-wrapper {
+    width: 100%;
   }
   .projects-ul {
     padding-left: 0;
   }
   .screenshot-1 {
     padding-top: 8rem;
+    padding-right: 0;
   }
   .screenshot {
     padding-top: 8rem;
   }
   .screenshot-2 {
-    max-height: 40%;
+    max-height: 30%;
     padding-top: 7rem;
   }
   .skills-wrapper {
     display: flex;
     flex-direction: column;
     padding-bottom: 40rem;
+    width: 100%;
   }
   .skills-cards {
     display: flex;
@@ -880,8 +892,9 @@ li > a:visited {
   .language-card,
   .framework-card,
   .tech-card {
-    width: 100%;
+    width: 70%;
     text-align: center;
+    margin: 0 auto;
   }
 }
 
