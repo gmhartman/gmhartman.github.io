@@ -899,5 +899,13 @@ li > a:visited {
 }
 
 @media (min-width: 768px) {
-
+  .about-text {
+    width: 50%;
+  }
+  .famphoto {
+    width: 50%;
+  }
+  .predsphoto {
+    padding-top: 12rem;
+  }
 }
