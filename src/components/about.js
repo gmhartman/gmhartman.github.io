@@ -24,7 +24,7 @@ function About() {
   return (
       <div ref={ref} className='about-wrapper'>
         <div className="about-text">
-          <h2 id="about">About Greg</h2>
+          <h1 id="about">About <span className="greg">Greg</span></h1>
           <p className="about-p">
             I'm a supply chain manager with 9 years of experience, and an
             aspiring full-stack web developer. I'm a proud dad, craft beer and

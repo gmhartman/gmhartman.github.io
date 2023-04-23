@@ -27,7 +27,7 @@ function Projects() {
     <div ref={ref} className="projects-wrapper">
       <div>
         <h1 id="projects">Work I've Done</h1>
-        <ul>
+        <ul className="projects-ul">
           <li className="list-item">
             <a
               href="https://guarded-atoll-04866.herokuapp.com/books"

@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="site-wrapper">
       {/* <Overlay /> */}
       <Nav />
       <Start />
