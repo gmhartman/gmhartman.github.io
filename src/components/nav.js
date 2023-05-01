@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/ghlogo.png";
 
 function Nav() {
+  
   let prevScroll = window.pageYOffset;
 
   window.onscroll = function () {

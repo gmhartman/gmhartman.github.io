@@ -48,7 +48,7 @@ function Start() {
           Thanks for stopping by.
         </h2>
         <a
-          href="https://drive.google.com/file/d/1wvIYfrkoQ7c9kUkjQYOLWNWECUhIMum8/view?usp=share_link"
+          href="https://docs.google.com/document/d/1TQmTZQbzHHWqzDCQ5luPeoxJOb_KYrLl/edit?usp=share_link&ouid=116712014272766521683&rtpof=true&sd=true"
           target="_blank"
           rel="noreferrer"
         >

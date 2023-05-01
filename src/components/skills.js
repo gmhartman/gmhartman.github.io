@@ -38,6 +38,7 @@ function Skills() {
             <p>React JS</p>
             <p>Node</p>
             <p>Express</p>
+            <p>Mongo DB</p>
             <p>Bootstrap</p>
           </div>
           <div className="tech-card">
